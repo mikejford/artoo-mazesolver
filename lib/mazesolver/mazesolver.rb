@@ -28,6 +28,7 @@ class Mazesolver
   
   def move(*path)
     if @maze.path_available?(path)
+      print_maze
       @current_pos = path
       if @maze.finished?(self)
         messages << SolvedMessage.new
@@ -45,6 +46,19 @@ class Mazesolver
   
   def current_y
     @current_pos[0]
+  end
+
+  def print_maze
+    # TODO: using dup and clone don't seem to work for deep-copy,
+    # if anyone can tell me why I would appreciate it...
+    m = Maze::MAZE.dup
+
+    current = m[current_y][current_x]  # grab current character
+    m[current_y][current_x] = '.'      # replace it
+    output = m.map(&:join).join("\n")  # build up output string
+    m[current_y][current_x] = current  # put it back
+
+    puts "\n#{output}\n"
   end
 
   class MazesolverMessage 
