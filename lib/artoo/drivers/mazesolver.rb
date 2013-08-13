@@ -5,7 +5,7 @@ module Artoo
     # The mazesolver driver behaviors
     class Mazesolver < Driver
 
-      COMMANDS = [:up, :down, :left, :right, :current_pos, :messages].freeze
+      COMMANDS = [:up, :down, :left, :right, :current_pos].freeze
 
       # Start driver and any required connections
       def start_driver
