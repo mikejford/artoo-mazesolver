@@ -50,4 +50,4 @@ Some users had a problem when running artoo like ```artoo start my_robot.rb``` a
 
 ## Acknowledgements
 
-I want to thank Ron Evans for creating Artoo, Tim Tyrell for the opportunity to talk to Austin RB, the Austin RB group for doing the exercise and showing me all their great implementations, and Eric Wood for providing a visual progress interface for this project.
+I want to thank Ron Evans for creating Artoo, Tim Tyrell for the opportunity to talk to Austin RB, the Austin RB group for doing the exercise and showing me all their great implementations, and Eric Wood for providing a visual progress interface for this project. Also, thanks to Sharon Cichelli and the folks at Austin Polyglot Programmers for hosting my encore presentation
